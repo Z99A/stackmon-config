@@ -17,6 +17,40 @@ elements:
   antiddos_skip_bad_type:
     service_type: AntiDDoS
     urls: []
+    # WAF
+  waf:
+    # service_type in the catalog
+    service_type: waf
+    # how SDK proxy is named
+    sdk_proxy: waf
+    # which urls to test
+    urls:
+      - /waf/config/alert
+      - /waf/policy
+      - /waf/certificate
+    # DWAF
+  wafd:
+    # service_type in the catalog
+    service_type: wafd
+    # how SDK proxy is named
+    sdk_proxy: wafd
+    # which urls to test
+    urls:
+      - /waf/policy
+      - /waf/certificate
+    # DBSS
+  #dbss:
+  #  # service_type in the catalog
+  #  service_type: dbss
+  #  # how SDK proxy is named
+  #  sdk_proxy: # TODO
+  #  # which urls to test
+  #  urls:
+  #    - /
+# TODO
+  #dbss_skip_: #TODO
+  #  service_type: dbss
+  #  urls: []
   as:
     service_type: as
     sdk_proxy: auto_scaling

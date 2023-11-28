@@ -454,8 +454,13 @@ components:
     region: EU-DE
     type: wafd
   name: Dedicated Web Application Firewall
-- attributes:
-    category: Security Services
-    region: EU-NL
-    type: wafd
-  name: Dedicated Web Application Firewall
+- #attributes:
+  #  category: Security Services
+  #  region: EU-NL
+  #  type: wafd
+  #name: Dedicated Web Application Firewall
+ # - attributes:
+ #   category: Security Services
+ #   region: EU-DE
+ #   type: dbss
+ # name: Database Security Service

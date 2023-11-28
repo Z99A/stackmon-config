@@ -98,6 +98,9 @@ matrix:
         config_elements:
           - antiddos
           - antiddos_skip_bad_type
+          - waf
+          - wafd
+          #- dbss
           - as
           - as_skip_v1
           - bms
@@ -164,6 +167,9 @@ matrix:
         config_elements:
           - antiddos
           - antiddos_skip_bad_type
+          - waf
+          - wafd
+          #- dbss
           - as
           - as_skip_v1
           - cce_skip_unver
@@ -216,6 +222,9 @@ matrix:
         config_elements:
           - antiddos
           - antiddos_skip_bad_type
+          - waf
+          - wafd
+          #- dbss
           - as
           - as_skip_v1
           - bms
@@ -275,6 +284,9 @@ matrix:
         config_elements:
           - antiddos
           - antiddos_skip_bad_type
+          - waf
+          - wafd
+          #- dbss
           - as
           - as_skip_v1
           - cce_skip_unver
@@ -323,6 +335,7 @@ matrix:
         cloud_name: hybrid_eu-ch2
         # env in zone has few creds. We need to pick one
         config_elements:
+          - wafd
           - as_swiss
           - cce
           - ces
@@ -356,6 +369,7 @@ matrix:
         cloud_name: hybrid_eu-ch2
         # env in zone has few creds. We need to pick one
         config_elements:
+          - wafd
           - as_swiss
           - cce
           - ces

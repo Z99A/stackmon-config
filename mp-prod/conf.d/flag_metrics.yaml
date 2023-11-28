@@ -1050,3 +1050,51 @@ flag_metrics:
     environments:
       - name: "production_eu-de"
       - name: "production_eu-nl"
+  ### DWAF
+  - name: "api_down"
+    service: "wafd"
+    template:
+      name: "api_down"
+    environments:
+      - name: "production_eu-de"
+      - name: "production_eu-nl"
+
+  - name: "api_slow"
+    service: "wafd"
+    template:
+      name: "api_slow"
+    environments:
+      - name: "production_eu-de"
+      - name: "production_eu-nl"
+
+  - name: "api_success_rate_low"
+    service: "wafd"
+    template:
+      name: "api_success_rate_low"
+    environments:
+      - name: "production_eu-de"
+      - name: "production_eu-nl"
+  ### DBSS
+  #- name: "api_down"
+  #  service: "dbss"
+  #  template:
+  #    name: "api_down"
+  #  environments:
+  #    - name: "production_eu-de"
+  #    - name: "production_eu-nl"
+
+ # - name: "api_slow"
+ #   service: "dbss"
+ #   template:
+ #     name: "api_slow"
+ #   environments:
+ #     - name: "production_eu-de"
+ #     - name: "production_eu-nl"
+
+ # - name: "api_success_rate_low"
+ #   service: "dbss"
+ #   template:
+ #     name: "api_success_rate_low"
+ #   environments:
+ #     - name: "production_eu-de"
+ #     - name: "production_eu-nl"

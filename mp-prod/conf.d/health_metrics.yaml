@@ -331,7 +331,34 @@ health_metrics:
         weight: 1
       - expression: "waf.api_down"
         weight: 2
-
+  ### DWAF
+  wafd:
+    service: wafd
+    component_name: "Dedicated Web Application Firewall"
+    category: database
+    metrics:
+      - wafd.api_down
+      - wafd.api_slow
+      - wafd.api_success_rate_low
+    expressions:
+      - expression: "wafd.api_slow || wafd.api_success_rate_low"
+        weight: 1
+      - expression: "wafd.api_down"
+        weight: 2
+  ### DBSS
+ # dbss:
+ #   service: dbss
+ #   component_name: "Database Security Service"
+ #   category: database
+ #   metrics:
+ #     - dbss.api_down
+ #     - dbss.api_slow
+ #     - dbss.api_success_rate_low
+ #   expressions:
+ #     - expression: "dbss.api_slow || dbss.api_success_rate_low"
+ #        weight: 1
+ #     - expression: "dbss.api_down"
+ #       weight: 2
   ## Management and Deployment
   ### CES
   ces:
